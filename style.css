@@ -1,0 +1,186 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up the homepage background image */
+.homepage {
+    background-image: url('images/background.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(255, 253, 253);  /* Dark background for the header */
+}
+
+header .header-logo {
+    height:20px; /* Adjust logo size */
+}
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the navbar */
+  nav {
+    background-color: #333; /* Dark background for navbar */
+    padding: 10px 0;
+  }
+  
+  .nav-links {
+    display: flex;          /* Display items in a row */
+    justify-content: center; /* Center the links horizontally */
+    list-style: none;        /* Remove default list styles */
+  }
+  
+  .nav-links li {
+    margin: 0 15px;           /* Space out the list items */
+  }
+  
+  .nav-links a {
+    text-decoration: none;    /* Remove underline from links */
+    color: white;             /* White text color */
+    font-size: 18px;          /* Text size */
+    padding: 5px 15px;        /* Padding for clickable area */
+  }
+  
+  .nav-links a:hover {
+    background-color: #575757; /* Darken the background when hovered */
+    border-radius: 5px;         /* Optional: Add rounded corners on hover */
+  }
+  
+/* Featured Products Section */
+.featured-products {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);  /* Semi-transparent background */
+}
+
+.featured-products h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Layout for the products (display them horizontally) */
+.products {
+    display: flex;
+    justify-content: space-around;  /* Space out the products */
+    flex-wrap: wrap;
+    gap: 30px;  /* Space between the products */
+}
+
+.product {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;  /* Width of the product box */
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product:hover {
+    transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+/* Product Title and Price */
+.product h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Buttons for Add to Cart and Buy Now */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.add-to-cart {
+    background-color: #f5f0f0;  /* Black background for Add to Cart */
+}
+
+.add-to-cart:hover {
+    background-color: #444444;  /* Darker black on hover */
+}
+
+.buy-now {
+    background-color: #f30606;  /* Black background for Buy Now */
+}
+
+.buy-now:hover {
+    background-color: #f71010;  /* Darker black on hover */
+}
+
+/* Set a background image specifically for the Contact page */
+.contact-page {
+    background-image: url('images/background.png'); /* Path to your background image */
+    background-size: cover; /* Make the image cover the entire page */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Fix the background during scrolling */
+    min-height: 100vh; /* Make sure the background image covers the full height of the page */
+    color: #333; /* Set the default text color to dark for readability */
+}
+
+/* Style for featured product images */
+.product-image {
+    width: 40px;         /* Set width to 200px */
+    height: auto;         /* Maintain the aspect ratio */
+    object-fit: cover;    /* Ensure images fit the space without distortion */
+    margin: 10px;         /* Optional: Adds space between images */
+  }
+  
+
+/* Optional: Style for the product container to ensure images stay aligned */
+.featured-products .products {
+    display: flex;       /* Arrange products in a row */
+    gap: 20px;           /* Space between products */
+    justify-content: center; /* Center the products */
+    flex-wrap: wrap;      /* Allow products to wrap on smaller screens */
+}
+
+/* Default logo size (if any) */
+.header-logo {
+    width: 200px;  /* Default size */
+}
+
+/* Target only the checkout page */
+.checkout.logo {
+    width: 40px; /* Reduce the size of the logo specifically on the checkout page */
+    height: auto;   /* Ensure aspect ratio is maintained */
+}
+

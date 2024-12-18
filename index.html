@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shopeease.store</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Add this style rule to set the logo size */
+    .header-logo {
+      width: 320px;
+      height: auto; /* This will maintain the aspect ratio */
+    }
+
+/* Apply a background image to the entire body of the homepage */
+body {
+    background-image: url('images/background.jpg');  /* Path to your image */
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;  /* Keep the background fixed during scrolling */
+    background-repeat: repeat;  /* Prevent image repetition */
+    min-height: 100vh;  /* Make sure the image covers the entire viewport height */
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <img src="images/shopeease logo.png" alt="Logo" class="header-logo">
+    <!-- Other content in your header -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li> 
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Classy Clothing</h1>
+      <p>Shop the latest fashion trends and style yourself with elegance</p>
+      <a href="shop.html" class="btn">Start Shopping</a>
+    </div>
+  </section>
+  <!-- Featured Products Section -->
+  <section class="featured-products">
+    <h2>featured-products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="images/joggers.png" alt="Stylish Jogger">
+        <h3>Stylish Jogger</h3>
+        <p>$45.99</p>
+        <a href="#" class="btn add-to-cart">Add to Cart</a>
+        <a href="#" class="btn buy-now">BUY NOW</a>
+      </div>
+      <div class="product">
+        <img src="images/nollie-sneaker-w-suede-nub-straw-brown.jpg" alt="Cool Sneakers">
+        <h3>Cool Sneakers</h3>
+        <p>$89.99</p>
+        <a href="#" class="btn add-to-cart">Add to Cart</a>
+        <a href="#" class="btn buy-now">BUY NOW</a>
+      </div>
+    </div>
+
+<script>
+function redirectToPayment() {
+    // Example: Check if the user is logged in, or other logic
+    let isLoggedIn = true; // This is just a placeholder condition
+
+    if (isLoggedIn) {
+        // Redirect to payment page
+        window.location.href = "checkout.html"; // Redirect to your payment page
+    } else {
+        // Redirect to login page if not logged in
+        window.location.href = "login.html";
+    }
+}
+</script>
+
+  <!-- Cart Section -->
+  <section class="cart-section">
+    <h2>Your Cart</h2>
+    <div id="cart-items">
+        <!-- Cart items will be displayed here -->
+    </div>
+    <p id="cart-total">Total: $0.00</p>
+    <button id="checkout-btn" class="btn">Proceed to Checkout</button>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 shopeease Store. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
